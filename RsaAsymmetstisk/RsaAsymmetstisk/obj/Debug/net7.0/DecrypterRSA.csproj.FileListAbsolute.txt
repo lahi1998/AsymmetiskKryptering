@@ -1,0 +1,14 @@
+C:\Users\zbclshi\source\repos\RsaAsymmetstisk\RsaAsymmetstisk\bin\Debug\net7.0\DecrypterRSA.exe
+C:\Users\zbclshi\source\repos\RsaAsymmetstisk\RsaAsymmetstisk\bin\Debug\net7.0\DecrypterRSA.deps.json
+C:\Users\zbclshi\source\repos\RsaAsymmetstisk\RsaAsymmetstisk\bin\Debug\net7.0\DecrypterRSA.runtimeconfig.json
+C:\Users\zbclshi\source\repos\RsaAsymmetstisk\RsaAsymmetstisk\bin\Debug\net7.0\DecrypterRSA.dll
+C:\Users\zbclshi\source\repos\RsaAsymmetstisk\RsaAsymmetstisk\bin\Debug\net7.0\DecrypterRSA.pdb
+C:\Users\zbclshi\source\repos\RsaAsymmetstisk\RsaAsymmetstisk\obj\Debug\net7.0\DecrypterRSA.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\zbclshi\source\repos\RsaAsymmetstisk\RsaAsymmetstisk\obj\Debug\net7.0\DecrypterRSA.AssemblyInfoInputs.cache
+C:\Users\zbclshi\source\repos\RsaAsymmetstisk\RsaAsymmetstisk\obj\Debug\net7.0\DecrypterRSA.AssemblyInfo.cs
+C:\Users\zbclshi\source\repos\RsaAsymmetstisk\RsaAsymmetstisk\obj\Debug\net7.0\DecrypterRSA.csproj.CoreCompileInputs.cache
+C:\Users\zbclshi\source\repos\RsaAsymmetstisk\RsaAsymmetstisk\obj\Debug\net7.0\DecrypterRSA.dll
+C:\Users\zbclshi\source\repos\RsaAsymmetstisk\RsaAsymmetstisk\obj\Debug\net7.0\refint\DecrypterRSA.dll
+C:\Users\zbclshi\source\repos\RsaAsymmetstisk\RsaAsymmetstisk\obj\Debug\net7.0\DecrypterRSA.pdb
+C:\Users\zbclshi\source\repos\RsaAsymmetstisk\RsaAsymmetstisk\obj\Debug\net7.0\DecrypterRSA.genruntimeconfig.cache
+C:\Users\zbclshi\source\repos\RsaAsymmetstisk\RsaAsymmetstisk\obj\Debug\net7.0\ref\DecrypterRSA.dll

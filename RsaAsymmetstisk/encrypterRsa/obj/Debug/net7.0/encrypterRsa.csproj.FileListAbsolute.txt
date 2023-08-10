@@ -1,0 +1,14 @@
+C:\Users\zbclshi\source\repos\RsaAsymmetstisk\encrypterRsa\bin\Debug\net7.0\encrypterRsa.exe
+C:\Users\zbclshi\source\repos\RsaAsymmetstisk\encrypterRsa\bin\Debug\net7.0\encrypterRsa.deps.json
+C:\Users\zbclshi\source\repos\RsaAsymmetstisk\encrypterRsa\bin\Debug\net7.0\encrypterRsa.runtimeconfig.json
+C:\Users\zbclshi\source\repos\RsaAsymmetstisk\encrypterRsa\bin\Debug\net7.0\encrypterRsa.dll
+C:\Users\zbclshi\source\repos\RsaAsymmetstisk\encrypterRsa\bin\Debug\net7.0\encrypterRsa.pdb
+C:\Users\zbclshi\source\repos\RsaAsymmetstisk\encrypterRsa\obj\Debug\net7.0\encrypterRsa.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\zbclshi\source\repos\RsaAsymmetstisk\encrypterRsa\obj\Debug\net7.0\encrypterRsa.AssemblyInfoInputs.cache
+C:\Users\zbclshi\source\repos\RsaAsymmetstisk\encrypterRsa\obj\Debug\net7.0\encrypterRsa.AssemblyInfo.cs
+C:\Users\zbclshi\source\repos\RsaAsymmetstisk\encrypterRsa\obj\Debug\net7.0\encrypterRsa.csproj.CoreCompileInputs.cache
+C:\Users\zbclshi\source\repos\RsaAsymmetstisk\encrypterRsa\obj\Debug\net7.0\encrypterRsa.dll
+C:\Users\zbclshi\source\repos\RsaAsymmetstisk\encrypterRsa\obj\Debug\net7.0\refint\encrypterRsa.dll
+C:\Users\zbclshi\source\repos\RsaAsymmetstisk\encrypterRsa\obj\Debug\net7.0\encrypterRsa.pdb
+C:\Users\zbclshi\source\repos\RsaAsymmetstisk\encrypterRsa\obj\Debug\net7.0\encrypterRsa.genruntimeconfig.cache
+C:\Users\zbclshi\source\repos\RsaAsymmetstisk\encrypterRsa\obj\Debug\net7.0\ref\encrypterRsa.dll

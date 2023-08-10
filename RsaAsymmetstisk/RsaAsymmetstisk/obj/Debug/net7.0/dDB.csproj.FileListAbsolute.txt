@@ -1,0 +1,14 @@
+C:\Users\zbclshi\source\repos\RsaAsymmetstisk\RsaAsymmetstisk\bin\Debug\net7.0\dDB.exe
+C:\Users\zbclshi\source\repos\RsaAsymmetstisk\RsaAsymmetstisk\bin\Debug\net7.0\dDB.deps.json
+C:\Users\zbclshi\source\repos\RsaAsymmetstisk\RsaAsymmetstisk\bin\Debug\net7.0\dDB.runtimeconfig.json
+C:\Users\zbclshi\source\repos\RsaAsymmetstisk\RsaAsymmetstisk\bin\Debug\net7.0\dDB.dll
+C:\Users\zbclshi\source\repos\RsaAsymmetstisk\RsaAsymmetstisk\bin\Debug\net7.0\dDB.pdb
+C:\Users\zbclshi\source\repos\RsaAsymmetstisk\RsaAsymmetstisk\obj\Debug\net7.0\dDB.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\zbclshi\source\repos\RsaAsymmetstisk\RsaAsymmetstisk\obj\Debug\net7.0\dDB.AssemblyInfoInputs.cache
+C:\Users\zbclshi\source\repos\RsaAsymmetstisk\RsaAsymmetstisk\obj\Debug\net7.0\dDB.AssemblyInfo.cs
+C:\Users\zbclshi\source\repos\RsaAsymmetstisk\RsaAsymmetstisk\obj\Debug\net7.0\dDB.csproj.CoreCompileInputs.cache
+C:\Users\zbclshi\source\repos\RsaAsymmetstisk\RsaAsymmetstisk\obj\Debug\net7.0\dDB.dll
+C:\Users\zbclshi\source\repos\RsaAsymmetstisk\RsaAsymmetstisk\obj\Debug\net7.0\refint\dDB.dll
+C:\Users\zbclshi\source\repos\RsaAsymmetstisk\RsaAsymmetstisk\obj\Debug\net7.0\dDB.pdb
+C:\Users\zbclshi\source\repos\RsaAsymmetstisk\RsaAsymmetstisk\obj\Debug\net7.0\dDB.genruntimeconfig.cache
+C:\Users\zbclshi\source\repos\RsaAsymmetstisk\RsaAsymmetstisk\obj\Debug\net7.0\ref\dDB.dll
