@@ -14,6 +14,7 @@ namespace encrypterRsa
         private RSAParameters _publicKey;
         private RSAParameters _privateKey;
 
+        
         public Encrypter(byte[] modulus, byte[] exponent)
         {
             rsa = RSA.Create();
@@ -30,6 +31,7 @@ namespace encrypterRsa
             rsa.Clear();
         }
 
+        // Kryptere det byte array det bliver fodret fra program.
         public byte[] EncryptData(byte[] dataEncrypt)
         {
             using (var rsa = RSA.Create())
