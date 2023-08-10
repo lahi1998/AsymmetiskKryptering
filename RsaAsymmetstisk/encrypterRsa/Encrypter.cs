@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography;
@@ -9,21 +9,18 @@ namespace encrypterRsa
 {
     internal class Encrypter
     {
-
         private RSA rsa;
-        private RSAParameters _publicKey;
-        private RSAParameters _privateKey;
 
-        
         public Encrypter(byte[] modulus, byte[] exponent)
         {
             rsa = RSA.Create();
             rsa.KeySize = 2048;
-            _publicKey = new RSAParameters
+            RSAParameters publicKey = new RSAParameters
             {
                 Modulus = modulus,
                 Exponent = exponent
             };
+            rsa.ImportParameters(publicKey);
         }
 
         public void DeleteKey()
@@ -31,17 +28,10 @@ namespace encrypterRsa
             rsa.Clear();
         }
 
-        // Kryptere det byte array det bliver fodret fra program.
         public byte[] EncryptData(byte[] dataEncrypt)
         {
-            using (var rsa = RSA.Create())
-            {
-                rsa.ImportParameters(_publicKey);
-                return rsa.Encrypt(dataEncrypt, RSAEncryptionPadding.OaepSHA256);
-            }
+            return rsa.Encrypt(dataEncrypt, RSAEncryptionPadding.OaepSHA256);
         }
-
     }
-
 }
 
