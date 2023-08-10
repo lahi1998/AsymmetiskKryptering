@@ -32,7 +32,7 @@ namespace RsaAsymmetstisk
             rsa.Clear();
         }
 
-
+        // Dekryptere det byte array det bliver fodret fra program.
         public byte[] DecryptData(byte[] dataDecrypt)
         {
             byte[] cipherbytes;
@@ -40,6 +40,7 @@ namespace RsaAsymmetstisk
             return cipherbytes;
         }
 
+        // Display af keys bruge a program.
         public void DisplayKeys()
         {
             Console.WriteLine();
