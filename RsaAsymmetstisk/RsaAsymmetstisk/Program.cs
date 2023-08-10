@@ -15,7 +15,9 @@ internal class Program
 
         var RSADE = new Decrypter();
 
+        //køre en metode med alle keys både privat i writelines.
         RSADE.DisplayKeys();
+        
         Console.WriteLine();
         Console.WriteLine(" besked til decryptering med rsa.");
         Console.WriteLine();
@@ -23,7 +25,7 @@ internal class Program
         string? encryptedMessagestring = Console.ReadLine();
         byte[] encryptedMessage = Encoding.UTF8.GetBytes(encryptedMessagestring);
 
-
+        sender beskeden til decryptering
         var decryptedMessage = RSADE.DecryptData(encryptedMessage);
 
         RSADE.DeleteKey();
