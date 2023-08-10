@@ -29,9 +29,10 @@ internal class Program
         string? Message = Console.ReadLine();
 
 
-
+        
         var rsaen = new Encrypter(modulus, exponent);
 
+        //sender beskeden til kryptering
         var encryptedMessage = rsaen.EncryptData(Encoding.UTF8.GetBytes(Message));
         rsaen.DeleteKey();
 
