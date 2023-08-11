@@ -29,6 +29,8 @@ namespace encrypterRsa
             rsa.Clear();
         }
 
+
+        // kryptere et byte[] og retunere det, ligger i en try catch så hvis der fejl får man udprinted en fejl besked, og retunere null.
         public byte[] EncryptData(byte[] dataEncrypt)
         {
             try
@@ -37,7 +39,7 @@ namespace encrypterRsa
             }
             catch (CryptographicException ex)
             {
-                Console.WriteLine($"Encryption Error: {ex.Message}");
+                Console.WriteLine($" Encryption Error: {ex.Message}");
                 Console.ReadKey();
                 return null;
             }
