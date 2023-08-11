@@ -1,4 +1,5 @@
 ﻿using encrypterRsa;
+using EncrypterRSA;
 using System.Runtime.CompilerServices;
 using System.Security.Cryptography;
 using System.Text;
@@ -14,34 +15,42 @@ internal class Program
         Console.WriteLine("----------------------------------------------------------");
         Console.WriteLine();
         Console.WriteLine(" besked til kryptering med rsa.");
+
+
+        HexToByteArrayConverter Conv = new HexToByteArrayConverter();
+
+        // Modtager hexadecimal, find virkne convertering løsning
         Console.WriteLine();
-
-        Console.WriteLine("Indtast/paste Modulus :");
-        string? modulusString = Console.ReadLine().Replace("-", "");
-        byte[] modulus = Encoding.UTF8.GetBytes(modulusString);
+        Console.WriteLine(" Indtast/paste Exponent :");
+        string exponentString = Console.ReadLine();
+        byte[] exponent = Conv.StringToByteArray(exponentString);
 
         Console.WriteLine();
-        Console.WriteLine("Indtast/paste Exponent :");
-        string? exponentString = Console.ReadLine();
-        byte[] exponent = Encoding.UTF8.GetBytes(exponentString);
+        Console.WriteLine(" Indtast/paste Modulus :");
+        string modulusString = Console.ReadLine();
+        byte[] modulus = Conv.StringToByteArray(modulusString);
 
-        Console.Write(" Indtast krypted besked : ");
+        Console.WriteLine();
+        Console.Write(" Indtast besked : ");
         string? Message = Console.ReadLine();
 
 
-        
+
         var rsaen = new Encrypter(modulus, exponent);
 
-        //sender beskeden til kryptering
-        var encryptedMessage = rsaen.EncryptData(Encoding.UTF8.GetBytes(Message));
+        var encryptedMessage = rsaen.EncryptData(Encoding.ASCII.GetBytes(Message));
         rsaen.DeleteKey();
 
+        var lentghten = BitConverter.ToString(value: encryptedMessage).Replace("-", ""); ;
+        Console.WriteLine($"Encrypted Message Length: {lentghten.Length} bytes");
+        
+
         // output area for 
-        Console.Clear();
+        //Console.Clear();
         Console.WriteLine();
-        Console.WriteLine("   Original Text = " + Message);
+        Console.WriteLine(" Original Text = " + Message);
         Console.WriteLine();
-        Console.WriteLine($"   Encrypted Text = {BitConverter.ToString(value: encryptedMessage)}");
+        Console.WriteLine($" Encrypted Text = {BitConverter.ToString(value: encryptedMessage)}");
         Console.ReadKey();
     }
 

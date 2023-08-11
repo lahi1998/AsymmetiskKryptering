@@ -1,4 +1,5 @@
-﻿using RsaAsymmetstisk;
+﻿using EncrypterRSA;
+using RsaAsymmetstisk;
 using System.Runtime.CompilerServices;
 using System.Security.Cryptography;
 using System.Text;
@@ -14,19 +15,28 @@ internal class Program
         Console.WriteLine("----------------------------------------------------------");
 
         var RSADE = new Decrypter();
+        HexToByteArrayConverter Conv = new HexToByteArrayConverter();
 
-        //køre en metode med alle keys både privat i writelines.
         RSADE.DisplayKeys();
-        
         Console.WriteLine();
         Console.WriteLine(" besked til decryptering med rsa.");
         Console.WriteLine();
         Console.Write(" Indtast krypted besked : ");
         string? encryptedMessagestring = Console.ReadLine();
-        byte[] encryptedMessage = Encoding.UTF8.GetBytes(encryptedMessagestring);
+        byte[] encryptedMessage = Conv.StringToByteArray(encryptedMessagestring);
+        byte[] decryptedMessage = null;
 
-        sender beskeden til decryptering
-        var decryptedMessage = RSADE.DecryptData(encryptedMessage);
+        try
+        {
+            Console.WriteLine($"Encrypted Message Length: {encryptedMessage.Length} bytes");
+            Console.ReadKey();
+            decryptedMessage = RSADE.DecryptData(encryptedMessage);
+        }
+        catch (CryptographicException ex)
+        {
+            Console.WriteLine($"Decryption Error: {ex.Message}");
+            Console.ReadKey();
+        }
 
         RSADE.DeleteKey();
         Console.Clear();
@@ -35,6 +45,5 @@ internal class Program
         Console.WriteLine();
         Console.WriteLine($" Decrypted Text = {Encoding.Default.GetString(decryptedMessage)}");
     }
-
 
 }

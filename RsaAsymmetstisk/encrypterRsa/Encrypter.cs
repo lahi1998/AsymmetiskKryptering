@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography;
@@ -21,6 +21,7 @@ namespace encrypterRsa
                 Exponent = exponent
             };
             rsa.ImportParameters(publicKey);
+
         }
 
         public void DeleteKey()
@@ -30,7 +31,16 @@ namespace encrypterRsa
 
         public byte[] EncryptData(byte[] dataEncrypt)
         {
-            return rsa.Encrypt(dataEncrypt, RSAEncryptionPadding.OaepSHA256);
+            try
+            {
+                return rsa.Encrypt(dataEncrypt, RSAEncryptionPadding.OaepSHA256);
+            }
+            catch (CryptographicException ex)
+            {
+                Console.WriteLine($"Encryption Error: {ex.Message}");
+                Console.ReadKey();
+                return null;
+            }
         }
     }
 }
