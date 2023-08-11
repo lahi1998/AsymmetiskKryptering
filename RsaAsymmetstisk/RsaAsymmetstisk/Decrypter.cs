@@ -16,15 +16,15 @@ namespace RsaAsymmetstisk
 
         public void AssignKey()
         {
-            _publicKey = rsa.ExportParameters(false); // Export the public key
-            _privateKey = rsa.ExportParameters(true); // Export the private key
+            _publicKey = rsa.ExportParameters(false); // Export public key
+            _privateKey = rsa.ExportParameters(true); // Export private key
         }
 
         public Decrypter()
         {
             rsa = RSA.Create();
             rsa.KeySize = 2048;
-            AssignKey(); // Call AssignKey to generate keys in the constructor
+            AssignKey(); // Call AssignKey til genere keys i constructoren
         }
 
         public void DeleteKey()
